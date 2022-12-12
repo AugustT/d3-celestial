@@ -27,7 +27,14 @@ var config = {
   interactive: false,  // Enable zooming and rotation with mousewheel and dragging
   disableAnimations: true, // Disable all animations
   form: true,        // Display settings form
-  formFields: {download: true},
+  formFields: {"location": true,  // Set visiblity for each group of fields with the respective id
+               "general": false,  
+               "stars": false,  
+               "dsos": false,  
+               "constellations": false,  
+               "lines": false,  
+               "other": false,  
+               "download": false},
   location: true,    // Display location settings
   controls: false,     // Display zoom controls
   lang: "",           // Language for names, so far only for constellations: de: german, es: spanish
