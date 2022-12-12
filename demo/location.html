@@ -22,7 +22,7 @@ var config = {
   center: null,       // Initial center coordinates in equatorial transformation [hours, degrees, degrees],
                       // otherwise [degrees, degrees, degrees], 3rd parameter is orientation, null = default center
   orientationfixed: true,  // Keep orientation angle the same as center[2]
-  background: { fill: "#000000", stroke: "#000000", opacity: 1 }, // Background style
+  background: { fill: "#000000", stroke: "#0000FF", opacity: 1 }, // Background style
   adaptable: true,    // Sizes are increased with higher zoom-levels
   interactive: false,  // Enable zooming and rotation with mousewheel and dragging
   disableAnimations: true, // Disable all animations
@@ -41,13 +41,13 @@ var config = {
                       // Default:en or empty string for english
   container: "celestial-map",   // ID of parent element, e.g. div
   datapath: "../data/",  // Path/URL to data files, empty = subfolder 'data'
-  daterange: ["1930-01-01", "2030-01-01"],     // Calender date range; null: displaydate-+10; [n<100]: displaydate-+n; [yr]: yr-+10; 
+  daterange: [],     // Calender date range; null: displaydate-+10; [n<100]: displaydate-+n; [yr]: yr-+10; 
                       // [yr, n<100]: [yr-n, yr+n]; [yr0, yr1]  
   stars: {
     show: true,    // Show stars
     limit: 4.9,      // Show only stars brighter than limit magnitude
     colors: false,  // Show stars in spectral colors, if not use "color"
-    style: { fill: "#ffffff", opacity: 1 }, // Default style for stars
+    style: { fill: "#00FF00", opacity: 1 }, // Default style for stars
     names: false,   // Show star names (Bayer, Flamsteed, Variable star, Gliese, whichever applies first)
     proper: false, // Show proper name (if present)
     desig: false,  // Show all names, including Draper and Hipparcos
@@ -67,7 +67,7 @@ var config = {
                         "12px Helvetica, Arial, sans-serif",  // Different fonts for diff.
                         "11px Helvetica, Arial, sans-serif"]},// ranked constellation
     lines: true,   // Show constellation lines
-    linestyle: { stroke: "#ffffff", width: 1, opacity: 1 },
+    linestyle: { stroke: "#0000FF", width: 1, opacity: 1 },
     bounds: false,  // Show constellation boundaries
     boundstyle: { stroke: "#cccc00", width: 0.5, opacity: 0.8, dash: [2, 4] }
   },
@@ -76,7 +76,7 @@ var config = {
     style: { fill: "#ffffff", opacity: "0.15" }
   },
   lines: {
-    graticule: { show: true, stroke: "#ffffff", width: 0.6, opacity: 1,      // Show graticule lines
+    graticule: { show: true, stroke: "#0000FF", width: 0.6, opacity: 1,      // Show graticule lines
       // grid values: "outline", "center", or [lat,...] specific position
       lon: {pos: [""], fill: "#eee", font: "10px Helvetica, Arial, sans-serif"},
       // grid values: "outline", "center", or [lon,...] specific position
